@@ -1,0 +1,18 @@
+.buttonv3-btn {
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: 0.25s;
+  position: relative;
+  font-weight: 500;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #00bd6c;
+  border: none;
+}
+
+.buttonv3-btn:hover {
+  /* box-shadow: 0 0 4px #00bd6c, 0 0 10px #00bd6c, 0 0 20px #00bd6c,
+    0 0 20px #00bd6c; */
+}

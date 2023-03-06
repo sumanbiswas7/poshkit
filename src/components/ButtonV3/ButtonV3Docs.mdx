@@ -1,0 +1,27 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# Button 3
+
+A Fancy button with glow hover effect
+
+```js
+import { ButtonV3 } from "poshkit";
+
+function App() {
+  return (
+    <>
+      <ButtonV3 label="ButtonName" />;
+    </>
+  );
+}
+```
+
+### Props
+
+| Name         | Type                    | Description                                               | Required |
+| ------------ | ----------------------- | --------------------------------------------------------- | -------- |
+| `color`      | HexColorString          | Changes the text color of the button                      | No       |
+| `background` | Color or HexColorString | Changes the background color and glow color of the button | No       |
+| `label`      | string                  | Changes the label of the button                           | Yes      |
+| `size`       | size                    | Changes the size of the button                            | No       |
+| `radius`     | radius                  | Changes the border-radius of the button                   | No       |
