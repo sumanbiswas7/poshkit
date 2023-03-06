@@ -1,0 +1,28 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# Button
+
+```js
+import { Button } from "sumanbiswas-slick";
+
+function App() {
+  return (
+    <>
+      <Button label="ButtonName" />;
+    </>
+  );
+}
+```
+
+### Props
+
+| Name         | Type           | Description                                | Required |
+| ------------ | -------------- | ------------------------------------------ | -------- |
+| `label`      | string         | Changes the label of the button            | Yes      |
+| `background` | color          | Changes the background color of the button | No       |
+| `size`       | size           | Changes the size of the button             | No       |
+| `radius`     | radius         | Changes the border-radius of the button    | No       |
+| `style`      | style object   | Addictional styles                         | No       |
+| `hexBg`      | string [#fafa] | Gives a hex background color               | No       |
+| `color`      | string [#f2f2] | Gives a text color                         | No       |
+| `onClick`    | function       | Handle onClick event                       | No       |
