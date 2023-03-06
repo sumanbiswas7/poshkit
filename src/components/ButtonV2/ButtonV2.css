@@ -19,5 +19,5 @@
   background: #fff;
   border: 2px solid #000;
   color: #000;
-  margin-top: 0.25rem;
+  transform: translateY(0.25rem);
 }
