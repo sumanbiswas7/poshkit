@@ -20,6 +20,8 @@ export const Button2 = Template.bind({});
 
 Button2.args = {
   label: "Button 2",
+  background: "#00bd6c",
+  color: "#000",
 };
 
 Button2.parameters = {
