@@ -1,11 +1,11 @@
 <p align="left">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/logo-light.png">
-    <img alt="Slick.png" src="./assets/logo-dark.png" width="300px">
+    <img alt="Poshkit.png" src="./assets/logo-dark.png" width="300px">
   </picture>
 </p>
 
-Poshkit is a React components library that includes a list of React components, ready-to-use, free forever, and with accessibility always in mind. Build functional accessible web applications faster using slick while keeping your project size within bounds. Currently a few components but more adding soon
+PoshKit is a collection of modern, fancy components with amazing hover effects for React applications. With PoshKit, you can easily add stylish and interactive UI elements to your web applications, without spending hours on custom styling and animation. Build functional accessible web applications faster while keeping your project size within bounds. Currently a few components but more adding soon
 
 ### Installing
 
@@ -16,13 +16,13 @@ $ npm install poshkit
 Once the package is installed, you can import any component from the library using `import` and use it like below 👇
 
 ```js
-import { Button } from "sumanbiswas-slick";
+import { ButtonV1 } from "poshkit";
 
 function App() {
   return (
     <>
       <h1>Slick component 👇</h1>
-      <Button label="Settings" />;
+      <Button label="Button 1" />;
     </>
   );
 }
@@ -30,5 +30,5 @@ function App() {
 
 ## Documentation
 
-📑 [Live Page](https://sumanbiswas-slick.netlify.app/)
+📑 [Live Page](https://poshkit.netlify.app/)
 Go to specific `component/docs` to get the documentation of the component
