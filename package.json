@@ -52,8 +52,5 @@
     "url": "https://github.com/sumanbiswas7/poshkit.git"
   },
   "es6-shim": "^0.33.3",
-  "reflect-metadata": "0.1.2",
-  "dependencies": {
-    "react-dom": "^18.2.0"
-  }
+  "reflect-metadata": "0.1.2"
 }
