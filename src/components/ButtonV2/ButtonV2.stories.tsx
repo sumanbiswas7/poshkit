@@ -19,7 +19,7 @@ const Template: ComponentStory<typeof ButtonComponent> = (args) => (
 export const Button2 = Template.bind({});
 
 Button2.args = {
-  label: "Button 1",
+  label: "Button 2",
 };
 
 Button2.parameters = {

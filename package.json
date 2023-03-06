@@ -1,8 +1,8 @@
 {
   "name": "poshkit",
-  "version": "0.0.5",
+  "version": "0.0.51",
   "description": "Component library for react",
-  "homepage": "",
+  "homepage": "https://poshkit.netlify.app/",
   "scripts": {
     "rollup": "rollup -c",
     "dev": "start-storybook -p 6006",

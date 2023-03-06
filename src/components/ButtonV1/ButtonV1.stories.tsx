@@ -7,7 +7,6 @@ export default {
   title: "Components/Buttons",
   component: ButtonComponent,
   argTypes: {
-    background: { control: "text" },
     color: { control: "text" },
   },
 } as any;
@@ -20,6 +19,7 @@ export const Button1 = Template.bind({});
 
 Button1.args = {
   label: "Button 1",
+  gradient: ["#314ab6", "#00bd6c"],
 };
 
 Button1.parameters = {

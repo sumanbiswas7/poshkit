@@ -1,37 +1,32 @@
 import React, { ButtonHTMLAttributes } from "react";
 import "./ButtonV1.css";
 import {
-  btnSizeMap,
-  colorMap,
-  Color,
   HexColorString,
-  ColorMap,
-  BtnSizeMap,
   Size,
   btnRadiusMap,
   BtnRadiusMap,
+  BtnSizeMap,
 } from "../../constants/buttonConstants";
+import { btnSizeMap } from "./constants";
 
 export function ButtonV1({
-  background,
   size,
   color,
   radius,
   label,
+  gradient,
   ...restProps
 }: Props) {
-  const bgColor = {
-    backgroundColor: getBgColor(colorMap, background || ""),
-  };
   const btnTextColor = { color };
   const btnSize = getBtnSize(btnSizeMap, size || "");
   const btnRadius = getBtnRadius(btnRadiusMap, radius || "");
+  const bgGradient = getBgGradient(gradient || ["#314ab6", "#00bd6c"]);
 
   const combinedStyles = {
-    ...bgColor,
     ...btnSize,
     ...btnTextColor,
     ...btnRadius,
+    ...bgGradient,
   };
 
   return (
@@ -41,9 +36,14 @@ export function ButtonV1({
   );
 }
 
-function getBgColor(colorMap: ColorMap, color: string) {
-  if (color in colorMap) return colorMap[color as keyof typeof colorMap];
-  else return color;
+function getBgGradient(gradient: [HexColorString, HexColorString]) {
+  console.log(gradient);
+  if (gradient.length == 2) {
+    const [color1, color2] = gradient;
+    return {
+      backgroundImage: `linear-gradient(100deg, ${color1} 0%, ${color2} 100%)`,
+    };
+  } else return {};
 }
 
 function getBtnSize(btnSizeMap: BtnSizeMap, size: string) {
@@ -58,9 +58,9 @@ function getBtnRadius(btnRadiusMap: BtnRadiusMap, size: string) {
 }
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  background?: Color | HexColorString;
   color?: HexColorString;
   radius?: Size;
   size?: Size;
   label?: string;
+  gradient?: [HexColorString, HexColorString];
 }

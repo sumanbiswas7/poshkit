@@ -35,8 +35,8 @@ export function ButtonV2({
   };
 
   return (
-    <button {...restProps} style={combinedStyles} className="buttonv1-btn">
-      {label || "Button 1"}
+    <button {...restProps} style={combinedStyles} className="buttonv2-btn">
+      {label || "Button 2"}
     </button>
   );
 }

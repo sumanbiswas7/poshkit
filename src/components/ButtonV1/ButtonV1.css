@@ -1,21 +1,17 @@
 .buttonv1-btn {
+  background: linear-gradient(100deg, #314ab6 0%, #00bd6c 100%);
+  background-size: 150% auto;
+  transition: 0.2s;
+
+  color: #fff;
+  border: none;
   cursor: pointer;
   border-radius: 2px;
   padding: 0.5rem 1rem;
-  color: #fff;
-  background: #000;
-  text-decoration: none;
-  box-shadow: 0px 0px 0 #000;
-  transition: 0.25s;
-  position: relative;
   font-weight: 500;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .buttonv1-btn:hover {
-  box-shadow: 8px 10px 0 #000;
-  background: #fff;
-  border: 2px solid #000;
-  color: #000;
-  margin-top: 0.25rem;
+  background-position: right center; /* change the direction of the change here */
 }
