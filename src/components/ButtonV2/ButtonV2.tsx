@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from "react";
-import "./ButtonV1.css";
+import "./ButtonV2.css";
 import {
   btnSizeMap,
   colorMap,
@@ -12,7 +12,7 @@ import {
   BtnRadiusMap,
 } from "../../constants/buttonConstants";
 
-export function ButtonV1({
+export function ButtonV2({
   background,
   size,
   color,

@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory } from "@storybook/react";
-import { ButtonV1 as ButtonComponent } from "./ButtonV1";
-import ButtonDocs from "./ButtonV1Docs.mdx";
+import { ButtonV2 as ButtonComponent } from "./ButtonV2";
+import ButtonDocs from "./ButtonV2Docs.mdx";
 
 export default {
   title: "Components/Buttons",
@@ -16,13 +16,13 @@ const Template: ComponentStory<typeof ButtonComponent> = (args) => (
   <ButtonComponent {...args} />
 );
 
-export const Button1 = Template.bind({});
+export const Button2 = Template.bind({});
 
-Button1.args = {
+Button2.args = {
   label: "Button 1",
 };
 
-Button1.parameters = {
+Button2.parameters = {
   docs: {
     page: ButtonDocs,
   },
