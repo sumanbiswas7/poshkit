@@ -16,3 +16,7 @@
   /* box-shadow: 0 0 4px #00bd6c, 0 0 10px #00bd6c, 0 0 20px #00bd6c,
     0 0 20px #00bd6c; */
 }
+
+.buttonv3-btn:active {
+  transform: translateY(2px);
+}

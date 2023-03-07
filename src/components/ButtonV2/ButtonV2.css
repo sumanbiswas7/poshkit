@@ -21,3 +21,8 @@
   color: #000;
   transform: translateY(0.25rem);
 }
+
+.buttonv2-btn:active {
+  transform: translateY(2px);
+  box-shadow: 3px 3px 0 #000;
+}

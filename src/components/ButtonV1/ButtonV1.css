@@ -15,3 +15,8 @@
 .buttonv1-btn:hover {
   background-position: right center; /* change the direction of the change here */
 }
+
+.buttonv1-btn:active {
+  background-position: left center; /* change the direction of the change here */
+  transform: translateY(2px);
+}
