@@ -1,0 +1,47 @@
+.buttonv5-btn,
+.buttonv5-btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  position: absolute;
+  border: none;
+
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: 0.25s;
+  font-weight: 500;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  border: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.buttonv5-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.buttonv5-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonv5-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background-color: #fff;
+}
+
+.buttonv5-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
