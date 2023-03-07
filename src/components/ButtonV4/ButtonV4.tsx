@@ -16,7 +16,6 @@ export function ButtonV4({
   background,
   size,
   color,
-  radius,
   label,
   ...restProps
 }: Props) {
@@ -24,13 +23,11 @@ export function ButtonV4({
   const bgColor = { backgroundColor: bgCol };
   const btnTextColor = { color };
   const btnSize = getBtnSize(btnSizeMap, size || "");
-  const btnRadius = getBtnRadius(btnRadiusMap, radius || "");
 
   const combinedStyles = {
     ...bgColor,
     ...btnSize,
     ...btnTextColor,
-    ...btnRadius,
   };
 
   return (
@@ -59,7 +56,6 @@ function getBtnRadius(btnRadiusMap: BtnRadiusMap, size: string) {
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   background?: Color | HexColorString;
   color?: HexColorString;
-  radius?: Size;
   size?: Size;
   label?: string;
 }
