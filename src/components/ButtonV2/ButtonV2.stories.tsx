@@ -9,6 +9,7 @@ export default {
   argTypes: {
     background: { control: "text" },
     color: { control: "text" },
+    shadowColor: { control: "text" },
   },
 } as any;
 
@@ -22,6 +23,7 @@ Button2.args = {
   label: "Button 2",
   background: "#00bd6c",
   color: "#000",
+  shadowColor: "#000",
 };
 
 Button2.parameters = {

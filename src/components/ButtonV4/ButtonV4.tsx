@@ -32,7 +32,7 @@ export function ButtonV4({
 
   return (
     <button {...restProps} style={combinedStyles} className="buttonv4-btn">
-      {label || "Button 3"}
+      {label || "Button 4"}
     </button>
   );
 }
