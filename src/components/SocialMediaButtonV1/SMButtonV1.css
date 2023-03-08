@@ -1,0 +1,63 @@
+.smbuttonv1-span {
+  color: inherit;
+  font-weight: 500;
+  position: absolute;
+  top: -2rem;
+  background-color: var(--bgCol);
+  padding-inline: 0.35rem;
+  padding-bottom: 0.25rem;
+  border-radius: 3px;
+  display: none;
+}
+
+.smbuttonv1-span::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: var(--bgCol);
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.smbuttonv1-anchor {
+  margin: 2rem;
+  font-size: 0.85rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgCol);
+  position: relative;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.smbuttonv1-anchor:hover .smbuttonv1-span {
+  display: block;
+  animation: smbuttonv1-title-popup 0.2s ease-out;
+}
+
+@keyframes smbuttonv1-title-popup {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

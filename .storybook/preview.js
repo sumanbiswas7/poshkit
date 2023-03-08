@@ -11,3 +11,11 @@ export const parameters = {
     container: DocsContainer,
   },
 };
+
+// export const decorators = [
+//   (Story) => (
+//     <div style={{ margin: "2em" }}>
+//       <Story />
+//     </div>
+//   ),
+// ];

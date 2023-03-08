@@ -1,0 +1,33 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# SM ButtonV1
+
+A Fancy Social Media button with cool hover effect
+
+```js
+import { SMButtonV1 } from "poshkit";
+import { AiOutlineInstagram } from "react-icons/ai";
+
+function App() {
+  return (
+    <>
+      <SMButtonV1
+        href="https://www.instagram.com/sumanbiswas7"
+        title="instagram"
+        background="#dd2a7b"
+        children={<AiOutlineInstagram size={26} />}
+      />
+    </>
+  );
+}
+```
+
+### Props
+
+| Name         | Type                    | Description                                | Required |
+| ------------ | ----------------------- | ------------------------------------------ | -------- |
+| `color`      | HexColorString          | Changes the text color of the button title | No       |
+| `background` | Color or HexColorString | Changes the background color of the button | No       |
+| `title`      | string                  | Changes the title of the button            | Yes      |
+| `href`       | string                  | Changes the link assosiated with button    | Yes       |
+| `size`       | size                    | Changes the size of the button             | No       |
