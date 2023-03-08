@@ -1,1 +1,1 @@
-export * from "./SMButtonV1";
+export * from "./SMButtonV2";
