@@ -1,0 +1,23 @@
+.smbuttonv2-anchor {
+  font-size: 0.85rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgCol);
+  position: relative;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+
+  transition: outline-color 0.2s;
+}
+
+.smbuttonv2-anchor:hover {
+  outline: 2px solid var(--bgCol);
+}

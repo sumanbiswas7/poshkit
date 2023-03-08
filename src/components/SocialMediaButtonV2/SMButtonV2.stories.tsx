@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentStory } from "@storybook/react";
-import { SMButtonV1 as ButtonComponent } from "./SMButtonV1";
-import ButtonDocs from "./SMButtonV1Docs.mdx";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { SMButtonV2 as ButtonComponent } from "./SMButtonV2";
+import ButtonDocs from "./SMButtonV2Docs.mdx";
+import { FiGithub } from "react-icons/fi";
 
 export default {
   title: "Components/SocialMedia Buttons",
@@ -17,19 +17,18 @@ const Template: ComponentStory<typeof ButtonComponent> = (args) => (
   <ButtonComponent {...args} />
 );
 
-export const SMButton1 = Template.bind({});
+export const SMButton2 = Template.bind({});
 
-SMButton1.args = {
-  background: "#dd2a7b",
+SMButton2.args = {
+  background: "#00bd6c",
   color: "#fff",
-  title: "instagram",
-  href: "https://www.instagram.com/sumanbiswas7",
-  size: "md",
+  href: "https://github.com/sumanbiswas7",
   target: "_blank",
-  children: <AiOutlineInstagram size={26} />,
+  size: "md",
+  children: <FiGithub size={18} />,
 };
 
-SMButton1.parameters = {
+SMButton2.parameters = {
   docs: {
     page: ButtonDocs,
   },

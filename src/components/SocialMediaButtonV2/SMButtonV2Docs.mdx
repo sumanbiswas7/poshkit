@@ -1,0 +1,32 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# SM ButtonV2
+
+A Fancy Social Media button with cool hover effect
+
+```js
+import { SMButtonV2 } from "poshkit";
+import { FiGithub } from "react-icons/fi";
+
+
+function App() {
+  return (
+    <>
+      <SMButtonV1
+        href="https://www.instagram.com/sumanbiswas7"
+        background="#00bd6c"
+        children={<FiGithub size={18} />}
+      />
+    </>
+  );
+}
+```
+
+### Props
+
+| Name         | Type                    | Description                                | Required |
+| ------------ | ----------------------- | ------------------------------------------ | -------- |
+| `color`      | HexColorString          | Changes the text color of the button title | No       |
+| `background` | Color or HexColorString | Changes the background color of the button | No       |
+| `href`       | string                  | Changes the link assosiated with button    | Yes       |
+| `size`       | size                    | Changes the size of the button             | No       |
