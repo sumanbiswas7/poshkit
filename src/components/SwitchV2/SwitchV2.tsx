@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./SwitchV2.css";
 import "./SwitchV2sm.css";
 import "./SwitchV2md.css";
@@ -10,7 +10,16 @@ export function SwitchV2({
   handlerColor,
   checkedBgColor,
   uncheckedBgColor,
+  checked,
 }: Props) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (checked) {
+      (inputRef.current as HTMLInputElement).checked = true;
+    }
+  }, []);
+
   function handleInputChange(e: any) {
     if (onChange) onChange(e.target.checked);
   }
@@ -35,6 +44,7 @@ export function SwitchV2({
     return (
       <div className="switchv2-sm-toggleWrapper" style={combinedStyles}>
         <input
+          ref={inputRef}
           onClick={handleInputChange}
           type="checkbox"
           className="switchv2-sm-dn"
@@ -49,6 +59,7 @@ export function SwitchV2({
     return (
       <div className="switchv2-md-toggleWrapper" style={combinedStyles}>
         <input
+          ref={inputRef}
           onClick={handleInputChange}
           type="checkbox"
           className="switchv2-md-dn"
@@ -64,6 +75,7 @@ export function SwitchV2({
   return (
     <div className="switchv2-toggleWrapper" style={combinedStyles}>
       <input
+        ref={inputRef}
         onClick={handleInputChange}
         type="checkbox"
         className="switchv2-dn"
@@ -82,4 +94,5 @@ interface Props {
   handlerColor?: Color | HexColorString;
   uncheckedBgColor?: Color | HexColorString;
   checkedBgColor?: Color | HexColorString;
+  checked?: boolean;
 }
