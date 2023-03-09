@@ -1,0 +1,28 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# SwitchV1
+
+A Fancy Dark Mode toggle button
+
+```js
+import { SwitchV1 } from "poshkit";
+
+function handleChange(isDark: boolean) {
+  console.log(isDark);
+}
+
+function App() {
+  return (
+    <>
+      <SwitchV1 onChange={handleClick} />
+    </>
+  );
+}
+```
+
+### Props
+
+| Name       | Type                    | Description                         | Required |
+| ---------- | ----------------------- | ----------------------------------- | -------- |
+| `size`     | size                    | Changes the size of the button      | No       |
+| `onChange` | (isDark: boolean)=>void | Handle toggle change using argument | No       |

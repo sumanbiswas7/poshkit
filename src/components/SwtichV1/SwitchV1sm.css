@@ -1,0 +1,163 @@
+.switchv1_sm-toggleWrapper {
+  width: max-content;
+  overflow: hidden;
+  color: white;
+}
+
+.switchv1_sm-toggleWrapper input {
+  position: absolute;
+  left: -99em;
+}
+
+.switchv1_sm-toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: #83d8ff;
+  border-radius: 84px;
+  transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.switchv1_sm-toggle__handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  top: 3px;
+  left: 3px;
+  height: 20px;
+  width: 20px;
+
+  background-color: #ffcf96;
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(-45deg);
+}
+
+.switchv1_sm-toggle__handler .switchv1_sm-crater {
+  position: absolute;
+  background-color: #e8cda5;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  border-radius: 100%;
+}
+
+.switchv1_sm-toggle__handler .switchv1_sm-crater--1 {
+  top: 10px;
+  left: 4px;
+  width: 4px;
+  height: 4px;
+}
+
+.switchv1_sm-toggle__handler .switchv1_sm-crater--2 {
+  top: 28px;
+  left: 22px;
+  width: 6px;
+  height: 6px;
+}
+
+.switchv1_sm-toggle__handler .switchv1_sm-crater--3 {
+  top: 10px;
+  left: 25px;
+  width: 8px;
+  height: 8px;
+}
+
+.switchv1_sm-star {
+  position: absolute;
+  background-color: #fff;
+  transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  border-radius: 50%;
+}
+
+.switchv1_sm-star--1 {
+  top: 10px;
+  left: 15px;
+  z-index: 1;
+  width: 30px;
+  height: 3px;
+}
+
+.switchv1_sm-star--2 {
+  top: 18px;
+  left: 28px;
+  z-index: 1;
+  width: 18px;
+  height: 3px;
+}
+
+.switchv1_sm-star--4 {
+  opacity: 0;
+  transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.switchv1_sm-star--4 {
+  top: 16px;
+  left: 11px;
+  z-index: 0;
+  width: 2px;
+  height: 2px;
+  transform: translate3d(3px, 0, 0);
+}
+
+input:checked + .switchv1_sm-toggle {
+  background-color: #749dd6;
+}
+
+input:checked + .switchv1_sm-toggle:before {
+  color: #749ed7;
+}
+
+input:checked + .switchv1_sm-toggle:after {
+  color: #fff;
+}
+
+input:checked + .switchv1_sm-toggle .switchv1_sm-toggle__handler {
+  background-color: #ffe5b5;
+  transform: translate3d(25px, 0, 0) rotate(0);
+}
+
+input:checked
+  + .switchv1_sm-toggle
+  .switchv1_sm-toggle__handler
+  .switchv1_sm-crater {
+  opacity: 1;
+}
+
+input:checked + .switchv1_sm-toggle .switchv1_sm-star--1 {
+  width: 2px;
+  height: 2px;
+}
+
+input:checked + .switchv1_sm-toggle .switchv1_sm-star--2 {
+  width: 4px;
+  height: 4px;
+  transform: translate3d(-5px, 0, 0);
+}
+
+input:checked + .switchv1_sm-toggle .switchv1_sm-star--3 {
+  width: 2px;
+  height: 2px;
+  transform: translate3d(-7px, 0, 0);
+}
+
+input:checked + .switchv1_sm-toggle .switchv1_sm-star--4,
+input:checked + .switchv1_sm-toggle .switchv1_sm-star--5,
+input:checked + .switchv1_sm-toggle .switchv1_sm-star--6 {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+input:checked + .switchv1_sm-toggle .switchv1_sm-star--4 {
+  transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+input:checked + .switchv1_sm-toggle .switchv1_sm-star--5 {
+  transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+input:checked + .switchv1_sm-toggle .switchv1_sm-star--6 {
+  transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
