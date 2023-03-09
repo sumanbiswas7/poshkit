@@ -1,0 +1,37 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# SwitchV2
+
+A Fancy toggle button with nice animation
+
+```js
+import { SwitchV2 } from "poshkit";
+
+function handleChange(isDark: boolean) {
+  console.log(isDark);
+}
+
+function App() {
+  return (
+    <>
+      <SwitchV2
+        size="md"
+        handlerColor="#1d1d1d"
+        uncheckedBgColor="#00bd6c"
+        checkedBgColor="#005731"
+        onChange={handleClick}
+      />
+    </>
+  );
+}
+```
+
+### Props
+
+| Name               | Type                    | Description                                  | Required |
+| ------------------ | ----------------------- | -------------------------------------------- | -------- |
+| `size`             | size                    | Changes the size of the button               | No       |
+| `onChange`         | (isDark: boolean)=>void | Handle toggle change using argument          | No       |
+| `handlerColor`     | Color or HexColorString | Changes round handler color                  | No       |
+| `uncheckedBgColor` | Color or HexColorString | Changes background color of unchecked switch | No       |
+| `checkedBgColor`   | Color or HexColorString | Changes background color of checked switch   | No       |

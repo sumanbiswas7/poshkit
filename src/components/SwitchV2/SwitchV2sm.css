@@ -1,0 +1,64 @@
+.switchv2-sm-toggleWrapper {
+  width: max-content;
+  overflow: hidden;
+  color: white;
+}
+
+.switchv2-sm-toggleWrapper input {
+  position: absolute;
+  left: -99em;
+}
+
+.switchv2-sm-toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: var(--switchv2-uncheckedBgColor);
+  border-radius: 84px;
+  transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.switchv2-sm-toggle__handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  top: 3px;
+  left: 3px;
+  height: 20px;
+  width: 20px;
+  background-color: var(--switchv2-handlerColor);
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(-45deg);
+}
+
+.switchv2-sm-toggle__handler .switchv2-sm-crater {
+  position: absolute;
+  background-color: var(--switchv2-handlerColor);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  border-radius: 100%;
+}
+
+input:checked + .switchv2-sm-toggle {
+  background-color: var(--switchv2-checkedBgColor);
+}
+
+input:checked + .switchv2-sm-toggle:before {
+  color: var(--switchv2-checkedBgColor);
+}
+
+input:checked + .switchv2-sm-toggle .switchv2-sm-toggle__handler {
+  background-color: var(--switchv2-handlerColor);
+  transform: translate3d(25px, 0, 0) rotate(0);
+}
+
+input:checked
+  + .switchv2-sm-toggle
+  .switchv2-sm-toggle__handler
+  .switchv2-sm-crater {
+  opacity: 1;
+}

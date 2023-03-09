@@ -1,8 +1,7 @@
 import React from "react";
 import { ComponentStory } from "@storybook/react";
-import { SwitchV1 as ButtonComponent } from "./SwitchV1";
-import ButtonDocs from "./SwitchV1Docs.mdx";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { SwitchV2 as ButtonComponent } from "./SwitchV2";
+import ButtonDocs from "./SwitchV2Docs.mdx";
 
 export default {
   title: "Components/Switches",
@@ -13,13 +12,16 @@ const Template: ComponentStory<typeof ButtonComponent> = (args) => (
   <ButtonComponent {...args} />
 );
 
-export const Switch1 = Template.bind({});
+export const Switch2 = Template.bind({});
 
-Switch1.args = {
+Switch2.args = {
   size: "md",
+  handlerColor: "#1d1d1d",
+  uncheckedBgColor: "#00bd6c",
+  checkedBgColor: "#005731",
 };
 
-Switch1.parameters = {
+Switch2.parameters = {
   docs: {
     page: ButtonDocs,
   },
