@@ -37,7 +37,6 @@ export function ButtonV1({
 }
 
 function getBgGradient(gradient: [HexColorString, HexColorString]) {
-  console.log(gradient);
   if (gradient.length == 2) {
     const [color1, color2] = gradient;
     return {
