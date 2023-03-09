@@ -16,6 +16,8 @@ export const Switch1 = Template.bind({});
 
 Switch1.args = {
   size: "md",
+  uncheckedBgColor: "#83d8ff",
+  checkedBgColor: "#749dd6",
 };
 
 Switch1.parameters = {

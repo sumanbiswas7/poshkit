@@ -3,15 +3,33 @@ import "./SwitchV1.css";
 import "./SwitchV1sm.css";
 import "./SwitchV1md.css";
 import { Size } from "../../constants/buttonConstants";
+import { Color, HexColorString } from "../../constants/buttonConstants";
 
-export function SwitchV1({ size, onChange }: Props) {
+export function SwitchV1({
+  size,
+  onChange,
+  checkedBgColor,
+  uncheckedBgColor,
+}: Props) {
   function handleInputChange(e: any) {
     if (onChange) onChange(e.target.checked);
   }
 
+  const uncheckedColorCss = {
+    "--switchv1-uncheckedBgColor": uncheckedBgColor || "#83d8ff",
+  };
+  const checkedColorCss = {
+    "--switchv1-checkedBgColor": checkedBgColor || "#749dd6",
+  };
+
+  const combinedStyles: any = {
+    ...uncheckedColorCss,
+    ...checkedColorCss,
+  };
+
   if (size == "sm") {
     return (
-      <div className="switchv1_sm-toggleWrapper">
+      <div className="switchv1_sm-toggleWrapper" style={combinedStyles}>
         <input
           onClick={handleInputChange}
           type="checkbox"
@@ -30,7 +48,7 @@ export function SwitchV1({ size, onChange }: Props) {
     );
   } else if (size == "md") {
     return (
-      <div className="switchv1_md-toggleWrapper">
+      <div className="switchv1_md-toggleWrapper" style={combinedStyles}>
         <input
           onClick={handleInputChange}
           type="checkbox"
@@ -50,7 +68,7 @@ export function SwitchV1({ size, onChange }: Props) {
   }
 
   return (
-    <div className="switchv1-toggleWrapper">
+    <div className="switchv1-toggleWrapper" style={combinedStyles}>
       <input
         onClick={handleInputChange}
         type="checkbox"
@@ -75,4 +93,6 @@ export function SwitchV1({ size, onChange }: Props) {
 interface Props {
   size?: Size;
   onChange?: (darkMode: boolean) => void;
+  uncheckedBgColor?: Color | HexColorString;
+  checkedBgColor?: Color | HexColorString;
 }
