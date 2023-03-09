@@ -1,0 +1,92 @@
+.switchv3-lg-toggleWrapper {
+  width: max-content;
+  overflow: hidden;
+  color: white;
+}
+
+.switchv3-lg-toggleWrapper input {
+  position: absolute;
+  left: -99em;
+}
+
+.switchv3-lg-toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+
+  width: 90px;
+  height: 50px;
+
+  background-color: var(--switchv3-uncheckedBgColor);
+  border-radius: 84px;
+  transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.switchv3-lg-toggle__handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+
+  top: 3px;
+  left: 3px;
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--switchv3-handlerColor);
+  background-color: #fff;
+
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(-45deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switchv3-lg-sun {
+  fill: #1d1d1d;
+  width: 1.5rem;
+}
+.switchv3-lg-moon {
+  display: none;
+  fill: #d2d2d2;
+  width: 1.5rem;
+}
+
+.switchv3-lg-toggle__handler .switchv3-lg-crater {
+  position: absolute;
+  background-color: var(--switchv3-handlerColor);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  border-radius: 100%;
+}
+
+input:checked + .switchv3-lg-toggle .switchv3-lg-sun {
+  display: none;
+}
+input:checked + .switchv3-lg-toggle .switchv3-lg-moon {
+  display: block;
+}
+
+input:checked + .switchv3-lg-toggle {
+  background-color: var(--switchv3-checkedBgColor);
+}
+
+input:checked + .switchv3-lg-toggle:before {
+  color: var(--switchv3-checkedBgColor);
+}
+
+input:checked + .switchv3-lg-toggle .switchv3-lg-toggle__handler {
+  background-color: var(--switchv3-handlerColor);
+  background-color: #000;
+  transform: translate3d(40px, 0, 0) rotate(0);
+}
+
+input:checked
+  + .switchv3-lg-toggle
+  .switchv3-lg-toggle__handler
+  .switchv3-lg-crater {
+  opacity: 1;
+}

@@ -1,0 +1,36 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# SwitchV3
+
+A Fancy dark mode toggle button with nice animation
+
+```js
+import { SwitchV3 } from "poshkit";
+
+function handleChange(isDark: boolean) {
+  console.log(isDark);
+}
+
+function App() {
+  return (
+    <>
+      <SwitchV3
+        size="md"
+        uncheckedBgColor="#F6F6F7"
+        checkedBgColor="#313136"
+        onChange={handleClick}
+      />
+    </>
+  );
+}
+```
+
+### Props
+
+| Name               | Type                    | Description                                           | Required |
+| ------------------ | ----------------------- | ----------------------------------------------------- | -------- |
+| `size`             | Size                    | Changes the size of the switch                        | No       |
+| `onChange`         | (isDark: boolean)=>void | Handle toggle change using argument                   | No       |
+| `uncheckedBgColor` | Color or HexColorString | Changes background color of unchecked switch          | No       |
+| `checkedBgColor`   | Color or HexColorString | Changes background color of checked switch            | No       |
+| `checked`          | Boolean                 | Changes the switch checked state (previously checked) | No       |
