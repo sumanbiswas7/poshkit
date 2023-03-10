@@ -1,0 +1,57 @@
+/*eye ball*/
+.loaderv3-eye {
+  --loaderv3-eye-background: #00bd6c;
+  --loaderv3-eyeball: #1d1d1d;
+
+  --loaderv3-eye-size: 30px;
+  --loaderv3-eyeball-size: 15px;
+  --loaderv3-eye-gap: 40px;
+
+  width: var(--loaderv3-eye-size);
+  height: var(--loaderv3-eye-size);
+
+  background-color: var(--loaderv3-eye-background);
+  border-radius: 50%;
+  box-shadow: var(--loaderv3-eye-gap) 0px 0px 0px var(--loaderv3-eye-background);
+  position: relative;
+}
+
+.loaderv3-eye:after {
+  width: var(--loaderv3-eyeball-size);
+  height: var(--loaderv3-eyeball-size);
+  background-color: var(--loaderv3-eyeball);
+  box-shadow: var(--loaderv3-eye-gap) 0px 0px 0px var(--loaderv3-eyeball);
+  border-radius: 50%;
+  left: 9px;
+  top: 8px;
+  position: absolute;
+  content: "";
+  -webkit-animation: loaderv3-eyeball 0.4s linear infinite alternate;
+  -moz-animation: loaderv3-eyeball 0.4s linear infinite alternate;
+  animation: loaderv3-eyeball 0.4s linear infinite alternate;
+}
+
+@-webkit-keyframes loaderv3-eyeball {
+  0% {
+    left: 9px;
+  }
+  100% {
+    left: 1px;
+  }
+}
+@-moz-keyframes loaderv3-eyeball {
+  0% {
+    left: 9px;
+  }
+  100% {
+    left: 1px;
+  }
+}
+@keyframes loaderv3-eyeball {
+  0% {
+    left: 9px;
+  }
+  100% {
+    left: 1px;
+  }
+}

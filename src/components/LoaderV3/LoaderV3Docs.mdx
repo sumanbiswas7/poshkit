@@ -1,0 +1,25 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# LoaderV2
+
+A Simple loader with loading animation
+
+```js
+import { LoaderV2 } from "poshkit";
+
+function App() {
+  return (
+    <>
+      <LoaderV2 loading={true} size="md" color="#00bd6c" />
+    </>
+  );
+}
+```
+
+### Props
+
+| Name      | Type                    | Description                                    | Required |
+| --------- | ----------------------- | ---------------------------------------------- | -------- |
+| `size`    | Size                    | Changes the size of the component              | No       |
+| `loading` | Boolean                 | Dispalys the loader if true else displays null | No       |
+| `color`   | Color or HexColorString | Changes color of the loader                    | No       |
