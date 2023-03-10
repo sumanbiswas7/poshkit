@@ -1,0 +1,22 @@
+.loaderv2-loader {
+  /* --loaderv2-size: 30px;
+  --loaderv2-stroke: 4px;
+  --loaderv2-color: #00bd6c; */
+
+  border: var(--loaderv2-stroke) solid var(--loaderv2-color);
+  border-left-color: transparent;
+  border-radius: 50%;
+  width: var(--loaderv2-size);
+  height: var(--loaderv2-size);
+  animation: loaderv2-spin89345 1s linear infinite;
+}
+
+@keyframes loaderv2-spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
