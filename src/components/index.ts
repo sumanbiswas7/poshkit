@@ -11,12 +11,13 @@ import { SwitchV1 } from "./SwitchV1"
 import { SwitchV2 } from "./SwitchV2"
 import { SwitchV3 } from "./SwitchV3"
 
-
+import { LoaderV1 } from "./LoaderV1"
 
 
 export {
     ButtonV1, ButtonV2, ButtonV3, ButtonV4, ButtonV5,
     SMButtonV1, SMButtonV2,
-    SwitchV1, SwitchV2, SwitchV3
+    SwitchV1, SwitchV2, SwitchV3,
+    LoaderV1
 }
 
