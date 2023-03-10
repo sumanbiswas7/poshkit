@@ -1,16 +1,21 @@
 <!-- Custom-MDX-Documentation.mdx -->
 
-# LoaderV2
+# LoaderV3
 
-A Simple loader with loading animation
+A Fancy loader with moving eye animation
 
 ```js
-import { LoaderV2 } from "poshkit";
+import { LoaderV3 } from "poshkit";
 
 function App() {
   return (
     <>
-      <LoaderV2 loading={true} size="md" color="#00bd6c" />
+      <LoaderV3
+        loading={true}
+        size="sm"
+        eyeBackground="#00bd6c"
+        eyeballColor="#1d1d1d"
+      />
     </>
   );
 }
@@ -18,8 +23,9 @@ function App() {
 
 ### Props
 
-| Name      | Type                    | Description                                    | Required |
-| --------- | ----------------------- | ---------------------------------------------- | -------- |
-| `size`    | Size                    | Changes the size of the component              | No       |
-| `loading` | Boolean                 | Dispalys the loader if true else displays null | No       |
-| `color`   | Color or HexColorString | Changes color of the loader                    | No       |
+| Name            | Type                    | Description                                    | Required |
+| --------------- | ----------------------- | ---------------------------------------------- | -------- |
+| `size`          | Size                    | Changes the size of the component              | No       |
+| `loading`       | Boolean                 | Dispalys the loader if true else displays null | No       |
+| `eyeBackground` | Color or HexColorString | Changes background color of the eyeball        | No       |
+| `eyeballColor`  | Color or HexColorString | Changes color of the eyeball                   | No       |
