@@ -1,21 +1,24 @@
 .buttonv5-btn,
 .buttonv5-btn:visited {
+  --buttonv5-radius: 2px;
+  --buttonv5-background: #00bd6c;
+
   text-decoration: none;
   display: inline-block;
   transition: all 0.2s;
-  position: absolute;
+  position: relative;
   border: none;
-
   cursor: pointer;
-  border-radius: 100px;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: 0.25s;
   font-weight: 500;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   border: none;
-  background-color: #fff;
   color: #000;
+
+  border-radius: var(--buttonv5-radius);
+  background-color: var(--buttonv5-background);
 }
 
 .buttonv5-btn:hover {
@@ -28,17 +31,18 @@
 }
 
 .buttonv5-btn::after {
+  border-radius: var(--buttonv5-radius);
+
   content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: var(--buttonv5-background);
 }
 
 .buttonv5-btn:hover::after {

@@ -8,6 +8,7 @@ export default {
   component: ButtonComponent,
   argTypes: {
     color: { control: "text" },
+    background: { control: "text" },
   },
 } as any;
 
@@ -20,6 +21,7 @@ export const Button5 = Template.bind({});
 Button5.args = {
   label: "Button 5",
   color: "#1d1d1d",
+  background: "#00bd6c",
 };
 
 Button5.parameters = {

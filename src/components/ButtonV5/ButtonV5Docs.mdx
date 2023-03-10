@@ -10,7 +10,7 @@ import { ButtonV5 } from "poshkit";
 function App() {
   return (
     <>
-      <ButtonV5 label="ButtonName" />;
+      <ButtonV5 label="Button 5" color="#1d1d1d" background="#00bd6c" />;
     </>
   );
 }
@@ -18,8 +18,10 @@ function App() {
 
 ### Props
 
-| Name    | Type           | Description                          | Required |
-| ------- | -------------- | ------------------------------------ | -------- |
-| `color` | HexColorString | Changes the text color of the button | No       |
-| `label` | string         | Changes the label of the button      | Yes      |
-| `size`  | size           | Changes the size of the button       | No       |
+| Name         | Type                    | Description                                | Required |
+| ------------ | ----------------------- | ------------------------------------------ | -------- |
+| `label`      | string                  | Changes the label of the button            | Yes      |
+| `color`      | HexColorString          | Changes the text color of the button       | No       |
+| `background` | Color or HexColorString | Changes the background color of the button | No       |
+| `size`       | Size                    | Changes the size of the button             | No       |
+| `raidus`     | Size                    | Changes the border-radius of the button    | No       |
