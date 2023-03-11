@@ -1,0 +1,60 @@
+.inputv2-input-container {
+  --inputv2-padding: 10px;
+  --inputv2-radius: 2px;
+  --inputv2-font-size: 14px;
+  --inputv2-label-font-size: 0.75rem;
+
+  --inputv2-accent: teal;
+  --inputv2-background: #2e2e2e;
+  --inputv2-border-accent: #4a4a4a;
+  --inputv2-color: #fff;
+
+  margin-top: var(--inputv2-padding);
+  position: relative;
+  border-radius: var(--inputv2-radius);
+  width: max-content;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.inputv2-input {
+  outline: none;
+  color: var(--inputv2-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--inputv2-border-accent);
+  border-radius: var(--inputv2-radius);
+  padding-block: var(--inputv2-padding);
+  /* padding-inline: var(--inputv2-padding); */
+  font-size: var(--inputv2-font-size);
+}
+
+.inputv2-input::placeholder {
+  color: var(--inputv2-border-accent);
+}
+
+.inputv2-input:focus {
+  /* border: 1px solid var(--inputv2-accent); */
+  border-bottom: 1px solid var(--inputv2-accent);
+}
+.inputv2-input:focus::placeholder {
+  color: transparent;
+}
+
+.inputv2-label {
+  color: var(--inputv2-border-accent);
+  color: transparent;
+  position: absolute;
+  left: var(--inputv2-padding);
+  top: var(--inputv2-padding);
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.inputv2-input:focus ~ .inputv2-label {
+  top: -20px;
+  left: 0;
+  font-weight: 500;
+  font-size: var(--inputv2-label-font-size);
+  color: var(--inputv2-accent);
+}
