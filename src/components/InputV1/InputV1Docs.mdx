@@ -1,0 +1,34 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# InputV1
+
+A Fancy input component with cool animation
+
+```js
+import { InputV1 } from "poshkit";
+
+function App() {
+  return (
+    <>
+      <InputV1
+        size="md"
+        background="#2e2e2e"
+        accentColor="#00bd6c"
+        borderColor="#4a4a4a"
+        color="#d2d2d2"
+      />
+    </>
+  );
+}
+```
+
+### Props
+
+| Name          | Type                    | Description                                           | Required |
+| ------------- | ----------------------- | ----------------------------------------------------- | -------- |
+| `size`        | Size                    | Changes the size of the component                     | No       |
+| `radius`      | Size                    | Changes the border-radius of the component            | No       |
+| `color`       | Color or HexColorString | Changes color of the text                             | No       |
+| `accentColor` | Color or HexColorString | Changes the accentColor (on focus colors)             | No       |
+| `background`  | Color or HexColorString | Changes background color of the input                 | No       |
+| `borderColor` | Color or HexColorString | Changes the border and placeholder color of the input | No       |
