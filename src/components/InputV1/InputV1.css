@@ -35,6 +35,9 @@
 .inputv1-input:focus {
   border: 1px solid var(--inputv1-accent);
 }
+.inputv1-input:focus::placeholder {
+  color: transparent;
+}
 
 .inputv1-label {
   color: var(--inputv1-border-accent);
