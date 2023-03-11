@@ -26,6 +26,7 @@ Input1.args = {
   accentColor: "#00bd6c",
   borderColor: "#4a4a4a",
   color: "#d2d2d2",
+  label: "Name",
 };
 
 Input1.parameters = {

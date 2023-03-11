@@ -14,6 +14,7 @@ export function InputV1({
   color,
   radius,
   borderColor,
+  label,
   ...restProps
 }: Props) {
   const inputBgcolor = {
@@ -48,13 +49,13 @@ export function InputV1({
     <div style={combinedStyles} className="inputv1-input-container">
       <input
         {...restProps}
-        placeholder="Name"
+        placeholder={label || ""}
         className="inputv1-input"
         type="text"
         id="input"
       />
       <label htmlFor="input" className="inputv1-label">
-        Name
+        {label || ""}
       </label>
     </div>
   );
@@ -104,4 +105,5 @@ interface Props extends Omit<InputHTMLAttributes<HTMLInputElement>, "size"> {
   color?: Color | HexColorString;
   accentColor?: Color | HexColorString;
   borderColor?: Color | HexColorString;
+  label?: string;
 }
