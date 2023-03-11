@@ -7,7 +7,6 @@ export default {
   title: "Components/Inputs",
   component: Component,
   argTypes: {
-    background: { control: "text" },
     color: { control: "text" },
     accentColor: { control: "text" },
     borderColor: { control: "text" },
@@ -25,6 +24,7 @@ Input2.args = {
   accentColor: "#00bd6c",
   borderColor: "#4a4a4a",
   color: "#d2d2d2",
+  label: "Name",
 };
 
 Input2.parameters = {
