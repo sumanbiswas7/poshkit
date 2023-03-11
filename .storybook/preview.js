@@ -5,7 +5,6 @@ export const parameters = {
   darkMode: {
     light,
     dark,
-    current: light,
   },
   docs: {
     container: DocsContainer,
