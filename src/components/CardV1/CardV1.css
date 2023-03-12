@@ -1,0 +1,37 @@
+.cardv1-card {
+  --cardv1-gradient-color1: #00bd6c;
+  --cardv1-gradient-color2: #314ab6;
+  --cardv1-shadow-color: #00ff752b;
+  --cardv1-background-color: #1a1a1a;
+
+  --cardv1-radius: 5px;
+  --cardv1-padding-b: 40px;
+  --cardv1-padding-i: 20px;
+
+  background-image: linear-gradient(
+    180deg,
+    var(--cardv1-gradient-color1) 0%,
+    var(--cardv1-gradient-color2) 100%
+  );
+  border-radius: var(--cardv1-radius);
+  color: #fff;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  transition: all 0.3s;
+  width: fit-content;
+}
+
+.cardv1-card2 {
+  padding: var(--cardv1-padding-b) var(--cardv1-padding-i);
+  background-color: var(--cardv1-background-color);
+  border-radius: var(--cardv1-radius);
+  transition: all 0.2s;
+  width: fit-content;
+}
+
+.cardv1-card2:hover {
+  transform: scale(0.98);
+}
+
+.cardv1-card:hover {
+  box-shadow: 0px 0px 30px 1px var(--cardv1-shadow-color);
+}

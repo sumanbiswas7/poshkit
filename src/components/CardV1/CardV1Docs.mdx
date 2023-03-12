@@ -1,0 +1,26 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# Button 1
+
+A Fancy button with gradient
+
+```js
+import { ButtonV1 } from "poshkit";
+
+function App() {
+  return (
+    <>
+      <ButtonV1 label="ButtonName" />;
+    </>
+  );
+}
+```
+
+### Props
+
+| Name       | Type                            | Description                                         | Required |
+| ---------- | ------------------------------- | --------------------------------------------------- | -------- |
+| `label`    | string                          | Changes the label of the button                     | Yes      |
+| `gradient` | [HexColorString,HexColorString] | Changes the background gradient color of the button | No       |
+| `size`     | size                            | Changes the size of the button                      | No       |
+| `radius`   | radius                          | Changes the border-radius of the button             | No       |
