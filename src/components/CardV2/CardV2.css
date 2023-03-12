@@ -1,0 +1,49 @@
+.cardv2-card {
+  --cardv2-frontbg: #03446a;
+  --cardv2-backbg: #1d1d1d;
+  --cardv2-width: 200px;
+  --cardv2-height: 300px;
+  --cardv2-radius: 5px;
+
+  width: var(--cardv2-width);
+  height: var(--cardv2-height);
+  perspective: 1000px;
+}
+
+.cardv2-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0cardv2-1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.cardv2-card:hover .cardv2-content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.cardv2-front,
+.cardv2-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--cardv2-frontbg);
+  text-align: center;
+  border-radius: var(--cardv2-radius);
+  backface-visibility: hidden;
+  color: #fff;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.cardv2-back {
+  background: var(--cardv2-backbg);
+  color: #fff;
+  transform: rotateY(180deg);
+}

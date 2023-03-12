@@ -1,0 +1,40 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# CardV1
+
+A Fancy card with on hover gradient shadow effect
+
+```js
+import { CardV1 } from "poshkit";
+
+function App() {
+  return (
+    <>
+      <CardV1
+        shadowColor="#00ff755b"
+        backgroundColor="#1a1a1a"
+        gradient={["#314ab6", "#00bd6c"]}
+      >
+        <h2>Suman Biswas</h2>
+        <div
+          style={{ width: "90%", height: "1px", backgroundColor: "#2d2d2d" }}
+        />
+        <p style={{ color: "#8d8d8d", width: 180 }}>
+          Currently a student, learning and developing new skills. fuelled by a
+          passion for making cool websites and applications.
+        </p>
+      </CardV1>
+    </>
+  );
+}
+```
+
+### Props
+
+| Name              | Type                            | Description                                                | Required |
+| ----------------- | ------------------------------- | ---------------------------------------------------------- | -------- |
+| `gradient`        | [HexColorString,HexColorString] | Changes the on hover background gradient color of the card | No       |
+| `radius`          | radius                          | Changes the border-radius of the card                      | No       |
+| `backgroundColor` | Color or HexColorString         | Changes the background color of the card                   | No       |
+| `shadowColor`     | Color or HexColorString         | Changes the on hover shadow color of the card              | No       |
+| `children`        | React.ReactNode                 | Add inner content of the card                              | No       |
