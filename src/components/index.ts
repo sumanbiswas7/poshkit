@@ -19,6 +19,7 @@ import { InputV1 } from "./InputV1"
 import { InputV2 } from "./InputV2"
 
 import { CardV1 } from "./CardV1"
+import { CardV2 } from "./CardV2"
 
 export {
     ButtonV1, ButtonV2, ButtonV3, ButtonV4, ButtonV5,
@@ -26,6 +27,6 @@ export {
     SwitchV1, SwitchV2, SwitchV3,
     LoaderV1, LoaderV2, LoaderV3,
     InputV1, InputV2,
-    CardV1
+    CardV1, CardV2
 }
 
