@@ -3,7 +3,7 @@ import {
     SMButtonV1, SMButtonV2,
     SwitchV1, SwitchV2, SwitchV3,
     LoaderV1, LoaderV2, LoaderV3,
-    InputV1
+    InputV1, InputV2
 } from './components';
 
 export {
@@ -11,7 +11,7 @@ export {
     SMButtonV1, SMButtonV2,
     SwitchV1, SwitchV2, SwitchV3,
     LoaderV1, LoaderV2, LoaderV3,
-    InputV1
+    InputV1, InputV2
 }
 
 // export * from './components';
