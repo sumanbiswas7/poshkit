@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof ButtonComponent> = (args) => (
 export const Switch3 = Template.bind({});
 
 Switch3.args = {
-  size: "md",
+  size: "sm",
   uncheckedBgColor: "#F6F6F7",
   checkedBgColor: "#313136",
 };
