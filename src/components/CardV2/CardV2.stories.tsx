@@ -25,7 +25,18 @@ const frontContent = (
       style={{ width: 50, borderRadius: 50 }}
     />
     <h2 style={{ margin: 7 }}>Suman Biswas</h2>
-    <p style={{ margin: 0, color: "#7d7d7d" }}>app & web dev</p>
+    <p
+      style={{
+        margin: 0,
+        color: "#7d7d7d",
+        textAlign: "left",
+        paddingInline: 17,
+        fontSize: 11,
+      }}
+    >
+      Currently a student, learning and developing new skills. fuelled by a
+      passion for making cool websites and applications.
+    </p>
   </>
 );
 
