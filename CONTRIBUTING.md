@@ -24,6 +24,15 @@ npm install
 npm run dev
 ```
 
+## Scripts
+
+- npm run dev: Starts the development server.
+- npm run build: Builds a static website in the storybook-static folder.
+- npm run rollup: Compiles the package into the dist folder. Before running this command, make sure to delete all devDependencies and add the necessary peerDependencies.
+
+> **Note**
+> Make sure to run `npm run rollup` before publishing it to npmjs (npm publish). This will make sure you're publishing your latest changes.
+
 ## Deployment
 
 If you want to deploy the website on Netlify, make sure to delete all `peerDependencies` from the package.json file. This ensures that all dependencies are included in the deployment package.
