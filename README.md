@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-PoshKit is a collection of modern, fancy components with amazing hover effects for React applications. With PoshKit, you can easily add stylish and interactive UI elements to your web applications, without spending hours on custom styling and animation. Build functional accessible web applications faster while keeping your project size within bounds. Currently a few components but more adding soon
+PoshKit is a collection of modern, fancy components with amazing hover effects for React applications. With PoshKit, you can easily add stylish and interactive UI elements to your web applications without spending hours on custom styling and animation. Build functional accessible web applications faster while keeping your project size within bounds. Currently a few components but more adding soon...
 
 ### Installing
 
@@ -21,7 +21,6 @@ import { ButtonV1 } from "poshkit";
 function App() {
   return (
     <>
-      <h1>Slick component 👇</h1>
       <Button label="Button 1" />;
     </>
   );
