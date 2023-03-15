@@ -1,7 +1,7 @@
 {
   "name": "poshkit",
-  "version": "0.0.6",
-  "description": "Component library for react",
+  "version": "0.1.0",
+  "description": "A collection of modern, fancy components with amazing hover effects for React applications",
   "homepage": "https://poshkit.netlify.app/",
   "scripts": {
     "rollup": "rollup -c",
@@ -9,11 +9,19 @@
     "build": "npm i react-dom@18.2.0 && build-storybook"
   },
   "keywords": [
-    "React",
-    "Component Library"
+    "react",
+    "next",
+    "nextjs",
+    "ui",
+    "components",
+    "ui-kit",
+    "animation",
+    "library",
+    "frontend",
+    "styling"
   ],
-  "author": "Suman Biswas",
-  "license": "ISC",
+  "author": "Suman Biswas <hellosumanbiswas@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@rollup/plugin-commonjs": "^21.0.1",
